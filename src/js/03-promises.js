@@ -4,13 +4,13 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', onSubmitForm);
-console.dir(form);
+// console.dir(form);
 
 function onSubmitForm(event) {
   event.preventDefault();
 
   let delay = Number(form.delay.value);
-  console.log(delay);
+  // console.log(delay);
 
   for (let i = 1; i <= form.amount.value; i += 1) {
     createPromise(i, delay)
